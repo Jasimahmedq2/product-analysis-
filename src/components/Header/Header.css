@@ -1,0 +1,9 @@
+.anchor-parent a{
+  text-decoration: none;
+  color: black;
+  margin: 30px;
+  font-weight: 700px;
+}
+.anchor-parent a:hover {
+  color: blueviolet;
+}
