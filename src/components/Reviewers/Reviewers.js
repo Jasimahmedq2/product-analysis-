@@ -1,10 +1,11 @@
 import React from 'react';
+import './Reviewers.css'
 
 const Reviewers = ({reviewer}) => {
   const {image, name, about, rating} = reviewer;
   return (
     <div>
-      <div>
+      <div className='reviewers-container'>
         <img src={image} alt="" />
         <p>name: {name}</p>
         <p>{about}</p>

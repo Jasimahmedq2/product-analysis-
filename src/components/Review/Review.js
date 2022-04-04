@@ -1,17 +1,22 @@
 import React from 'react';
-import Customhook from '../CustomHook/CustomHook';
+import useReview from '../useReview/useReview';
 import Reviewers from '../Reviewers/Reviewers';
+import './Review.css'
+
 
 const Review = () => {
-  const [review, setReview] = Customhook()
+  const [review, setReview] = useReview()
   return (
     <div>
       All users Review
+      <div className='review-container'>
       {
         review.map(reviewer => <Reviewers key={reviewer.id}
         reviewer={reviewer}
         ></Reviewers>)
       }
+      </div>
+     
     </div>
   );
 };

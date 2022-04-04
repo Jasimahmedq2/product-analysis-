@@ -1,11 +1,12 @@
 import React from 'react';
+import './Reviewer.css'
 
 const ReviewItem = ({reviewer}) => {
   const {name, image, rating, about } = reviewer
 
   return (
     <div>
-      <div>
+      <div className='card-style shadow-lg rounded'>
       <img src={image} alt="" />
       <p>name:{name}</p>
       <p>{about}</p>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const Customhook = () =>{
+const useReview = () =>{
   const [review, setReview] = useState([])
   useEffect(() => {
     fetch('data.json')
@@ -9,4 +9,4 @@ const Customhook = () =>{
   },[])
   return [review, setReview]
 }
-export default Customhook;
+export default useReview;

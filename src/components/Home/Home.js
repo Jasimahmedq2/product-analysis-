@@ -1,34 +1,43 @@
 import React, { useState } from 'react';
 import stock from '../../image/stock.png'
-import Customhook from '../CustomHook/CustomHook';
+import useReview from '../useReview/useReview';
 import Reviewer from '../Reviewer/Reviewer';
 import './Home.css'
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-const [review, setReview] = Customhook()
+const [review, setReview] = useReview()
+const navigat = useNavigate();
   return (
-    <div className='parent-container row container'>   
+    <div className='parent-container row mt-5'>   
       <div className='col-7'>
-      <h3 style={{color: 'black'}}>Investor</h3>
-      <h2 style={{color: 'orange'}}>The Best Company in Bangladesh</h2>
-      <h2 style={{color: 'blue'}}>Invest your Money And Grow Money More</h2>
+        <h1>REPAIRBD</h1>
+      <h2 style={{color: 'orange'}}>professional computer repair services</h2>
+      <p>
+        welcome to repairBD, your one-stop place <span>all kinds of computer repairs and diagnostics.</span> 
+       <h6> repair computer any problem at 24 hours.</h6>
+
+      </p>
       <button className='btn btn-primary px-5 px-2 '>see more</button>
     </div>
       <div className='col-5 image-position'>
        <img className='h-100 w-100' src={stock} alt="" />
       </div>
       <div>
-        
-      {
+
+
+       <div className='card-container'>
+        {
         review.slice(0,3).map(reviewer => <Reviewer key={reviewer.id}
           reviewer={reviewer}
         ></Reviewer> )
         
       }
+      </div>
       
       </div>
-      <div>
-      <button>see more</button>
+      <div className='btn-container my-3'>
+      <button className='btn btn-primary' onClick={() => navigat('/review')}>see more</button>
       </div>
     </div>
   
