@@ -2,10 +2,12 @@
 ## site link
 live site link: [https://reliable-lamington-fab0ad.netlify.app/](https://reliable-lamington-fab0ad.netlify.app/).
 
-## About this project
-
-This is simple react project. 
+1. This is simple react project 
 use react routing 
+2. user review showing.
+3. using rechrat 
+4. computer services activity and 'context api details', 'semantic tag detail'
+
 
 ### `npm start`
 
