@@ -41,9 +41,10 @@ const Chart = () => {
     }
 ]
   return (
- <div className='d-flex mt-5'>
+ <div className='d-flex mt-5 justify-content-between'>
    <div>
-   <LineChart width={400} height={400} data={data}>
+     <h3>line chart</h3>
+   <LineChart width={400} height={300} data={data}>
      <Line dataKey={"investment"}></Line>
      <Line dataKey={"sell"} stroke={'blue'}></Line>
 
@@ -55,7 +56,8 @@ const Chart = () => {
    </LineChart>
    </div>
    <div className='mt-5'>
-     <BarChart width={500} height={230} data={data}>
+     <h3>special chart</h3>
+     <BarChart width={400} height={300} data={data}>
       <Bar dataKey={"investmetnt"}></Bar>
       <Bar dataKey={"sell"}></Bar>
       <Bar dataKey={"revenue"}></Bar>

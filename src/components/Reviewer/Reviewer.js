@@ -6,7 +6,7 @@ const ReviewItem = ({reviewer}) => {
 
   return (
     <div>
-      <div className='card-style shadow-lg rounded'>
+      <div className='card-style shadow-lg bg-body rounded'>
       <img src={image} alt="" />
       <p>name:{name}</p>
       <p>{about}</p>
