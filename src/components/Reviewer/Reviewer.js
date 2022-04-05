@@ -8,9 +8,9 @@ const ReviewItem = ({reviewer}) => {
     <div>
       <div className='card-style shadow-lg bg-body rounded'>
       <img src={image} alt="" />
-      <p>name:{name}</p>
-      <p>{about}</p>
-      <p>rating: {rating}</p>
+      <h4 className='name-style'>name:{name}</h4>
+      <h6>{about}</h6>
+      <h5>rating: <span className='rating'>{rating}</span></h5>
       </div>
     </div>
    

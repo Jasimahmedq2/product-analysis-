@@ -7,9 +7,9 @@ const Reviewers = ({reviewer}) => {
     <div>
       <div className='reviewers-container shadow-lg bg-body rounded'>
         <img src={image} alt="" />
-        <p>name: {name}</p>
-        <p>{about}</p>
-        <p>rating:{rating}</p>
+        <h4 className='name-style'>{name}</h4>
+        <h6>{about}</h6>
+        <h5>rating:  <span className='rating'>{rating}</span></h5>
       </div>
     </div>
   );

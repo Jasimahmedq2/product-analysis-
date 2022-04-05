@@ -1,10 +1,11 @@
 # RepairBD
-
+## site link
 live site link: [https://reliable-lamington-fab0ad.netlify.app/](https://reliable-lamington-fab0ad.netlify.app/).
 
-## Available Scripts
+## About this project
 
-In the project directory, you can run:
+This is simple react project. 
+use react routing 
 
 ### `npm start`
 
