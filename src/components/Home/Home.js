@@ -12,13 +12,13 @@ const navigat = useNavigate();
     <div className='parent-container row mt-5'>   
       <div className='col-7'>
         <h1 className='name-style'>REPAIRBD</h1>
-      <h2>professional computer repair services</h2>
+      <h2 className='home-title'>professional computer repair services</h2>
       <h6>
         welcome to repairBD, your one-stop place <span>all kinds of computer repairs and diagnostics.</span> 
        <h6> repair computer any problem at 24 hours.</h6>
 
       </h6>
-      <button className='btn btn-primary px-5 px-2 '>see more</button>
+      <button className='btn btn-primary px-5 px-2 '>About us</button>
     </div>
       <div className='col-5 image-position'>
        <img className='h-100 w-100' src={stock} alt="" />

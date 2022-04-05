@@ -4,7 +4,7 @@ import './Blogs.css'
 const Blogs = () => {
   return (
     <div>
-      <h2>this is blogs page</h2>
+      <h2 className='blogs-title'>semantic tag and context api details</h2>
       <div className='d-flex container'>
         <div className='context-style shadow-lg bg-body '>
           <h4>context Api</h4>
