@@ -4,7 +4,7 @@ import Chart from '../Chart/Chart';
 const Dashboard = () => {
   return (
     <div>
-      <h2>this is dashboard page</h2>
+      <h4>bar chart and line chart</h4>
       <Chart></Chart>
     </div>
   );

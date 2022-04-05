@@ -43,12 +43,12 @@ const Chart = () => {
   return (
  <div className='d-flex mt-5 justify-content-between'>
    <div>
-     <h3>line chart</h3>
+     <h3>investment, sell and revenue</h3>
    <LineChart width={400} height={300} data={data}>
      <Line dataKey={"investment"}></Line>
      <Line dataKey={"sell"} stroke={'blue'}></Line>
 
-     <Line dataKey={"revenue"}></Line>
+     <Line dataKey={"revenue"} stroke={"#82ca9d"}></Line>
      <YAxis></YAxis>
      <XAxis dataKey={"month"}></XAxis>
      <Tooltip></Tooltip>
@@ -56,11 +56,11 @@ const Chart = () => {
    </LineChart>
    </div>
    <div className='mt-5'>
-     <h3>special chart</h3>
-     <BarChart width={400} height={300} data={data}>
-      <Bar dataKey={"investmetnt"}></Bar>
-      <Bar dataKey={"sell"}></Bar>
-      <Bar dataKey={"revenue"}></Bar>
+     <h3>investment sell and revenue </h3>
+     <BarChart width={400} height={260} data={data}>
+      <Bar dataKey={"investment"} fill={"blue"}></Bar>
+      <Bar dataKey={"sell"} fill={"#8884d8"}></Bar>
+      <Bar dataKey={"revenue"} fill={"#82ca9d"}></Bar>
       <XAxis></XAxis>
       <YAxis></YAxis>
       <Tooltip></Tooltip>

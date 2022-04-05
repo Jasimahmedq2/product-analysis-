@@ -11,7 +11,7 @@ const navigat = useNavigate();
   return (
     <div className='parent-container row mt-5'>   
       <div className='col-7'>
-        <h1 className='name-style'>REPAIRBD</h1>
+        <h2 className='name-style'>REPAIRBD</h2>
       <h2 className='home-title'>professional computer repair services</h2>
       <h6>
         welcome to repairBD, your one-stop place <span>all kinds of computer repairs and diagnostics.</span> 
@@ -37,7 +37,7 @@ const navigat = useNavigate();
       
       </div>
       <div className='btn-container my-3'>
-      <button className='btn btn-primary' onClick={() => navigat('/review')}>see more</button>
+      <button className='btn btn-primary px-5' onClick={() => navigat('/review')}>see more</button>
       </div>
     </div>
   
