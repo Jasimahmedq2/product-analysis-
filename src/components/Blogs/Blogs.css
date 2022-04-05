@@ -1,0 +1,9 @@
+.context-style{
+  border: 1px solid gray;
+  border-radius: 15px;
+}
+.semantic-style{
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin-left: 10px;
+}
